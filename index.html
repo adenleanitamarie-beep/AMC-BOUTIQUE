@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AMC Boutique</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #080808;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #d4af37;
+      font-size: 30px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      color: #cccccc;
+      margin-bottom: 35px;
+      font-size: 14px;
+    }
+
+    .input-box {
+      width: 100%;
+      margin-bottom: 18px;
+    }
+
+    input {
+      width: 100%;
+      padding: 16px;
+      border-radius: 10px;
+      border: 1px solid #555;
+      background: #171717;
+      color: white;
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #d4af37;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #d4af37;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .login-button:hover {
+      background: #f0d15a;
+    }
+
+    .forgot {
+      display: block;
+      margin-top: 22px;
+      color: #d4af37;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 35px;
+      color: #777;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container">
+
+    <!-- LOGO -->
+    <img src="logo.png" alt="AMC Boutique" class="logo">
+
+    <h1>AMC BOUTIQUE</h1>
+
+    <p class="subtitle">
+      Gestion de votre boutique
+    </p>
+
+    <!-- IDENTIFIANT -->
+    <div class="input-box">
+      <input
+        type="text"
+        placeholder="Téléphone ou identifiant"
+      >
+    </div>
+
+    <!-- MOT DE PASSE -->
+    <div class="input-box">
+      <input
+        type="password"
+        placeholder="Mot de passe"
+      >
+    </div>
+
+    <!-- BOUTON -->
+    <button class="login-button" onclick="connexion()">
+      SE CONNECTER
+    </button>
+
+    <a href="#" class="forgot">
+      Mot de passe oublié ?
+    </a>
+
+    <p class="footer">
+      ©️ 2026 AMC Boutique — Gestion commerciale
+    </p>
+
+  </div>
+
+  <script>
+    function connexion() {
+      alert("Bienvenue dans AMC Boutique !");
+    }
+  </script>
+
+</body>
+</html>
